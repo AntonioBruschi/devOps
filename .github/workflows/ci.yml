@@ -18,9 +18,9 @@ jobs:
         node-version: '14'
 
     - name: Validate HTML
-      uses: yodasws/html-validator-action@master
+      uses: davidneat/html-validate-action@master
       with:
-        file: index.html
+        files: 'index.html'
 
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
